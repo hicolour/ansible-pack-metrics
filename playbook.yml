@@ -1,0 +1,33 @@
+- hosts: all
+
+  vars:
+    user: root
+    graphite:
+      timezone: Europe/Warsaw
+      workers: 4
+      secret_key: 'ob3sow^ik#4q(k5*tgw&6j+osyr^@0jus$yd+-#^&^d#%yim1!'
+      use_remote_user_authentication: True
+      local_data_dir: /data
+      use_insecure_unpickler: true
+      db_name: graphite
+      db_user: graphite
+      db_password: graphite
+      http_port: 85
+
+
+    carbon:
+      host: 0.0.0.0
+      ssl: no
+
+
+  roles:
+#    # - ansible-role-common
+#    # - role: ansible-role-nginx
+#    #   nginx_sites: none
+
+     - common
+     - python
+     - postgres
+     - graphite
+     - statsd
+     - grafana

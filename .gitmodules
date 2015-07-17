@@ -1,0 +1,21 @@
+[submodule "roles/common"]
+	path = roles/common
+	url = git@github.com:hicolour/ansible-role-common.git
+[submodule "roles/grafana"]
+	path = roles/grafana
+	url = git@github.com:hicolour/ansible-role-grafana.git
+[submodule "roles/graphite"]
+	path = roles/graphite
+	url = git@github.com:hicolour/ansible-role-graphite.git
+[submodule "roles/nginx"]
+	path = roles/nginx
+	url = git@github.com:hicolour/ansible-role-nginx.git
+[submodule "roles/postgres"]
+	path = roles/postgres
+	url = git@github.com:hicolour/ansible-role-postgres.git
+[submodule "roles/python"]
+	path = roles/python
+	url = git@github.com:hicolour/ansible-role-python.git
+[submodule "roles/stasd"]
+	path = roles/stasd
+	url = git@github.com:hicolour/ansible-role-statsd.git
